@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-wrapper{
+    width: 60%;
+    height: 600px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.title-container{
+    width: 100%;
+    padding: 40px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+.input-value{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.input-value input{
+    padding: 18px;
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 20px;
+    border: 2px solid black;
+    background: rgb(182, 179, 179);
+    color: rgb(49, 48, 48);
+    font-size: 18px;
+    cursor: pointer;
+}
+.input-value input::placeholder{
+    color: rgb(66, 65, 65);
+    font-size: 18px;
+}
+.input-value button{
+    padding: 18px;
+    width: 50px;
+    border-radius: 6px;
+    border: 2px solid black;
+    background: rgb(182, 179, 179);
+    /* cursor: pointer; */
+    font-size: 15px;
+}
+.input-value button:focus{
+    border: 3px solid black;
+    background-color: green;
+}
+.input-value button:hover{
+    /* border: 3px solid black; */
+    background-color: green;
+    cursor: pointer;
+}
+.crud-container{
+    width: 100%;
+    height: auto;
+    margin: 10px 8px;
+    padding: 20px;
+}
+h5{
+    color: lime;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
