@@ -7,24 +7,20 @@
 }
 body{
     background-color: aquamarine;
-    width: 100%;
-    height: 100%;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50vh;
+    margin: 0 60px 60px 60px;
+    overflow: hidden;
 
 }
 .container-wrapper{
     width: 60%;
-    height: 600px;
+    height: 85%;
     background-color: #fff;
     padding: 10px;
     margin-top: 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
 }
 .title-container{
     width: 100%;
@@ -35,50 +31,55 @@ h1{
     text-align: center;
 }
 .input-value{
-    width: 80%;
+    width: 100%;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
-.input-value input{
-    padding: 18px;
-    border-radius: 25px;
+#input-field{
+    height: 40px;
+    border-radius: 22px;
     width: 70%;
     margin-left: 20px;
     border: 2px solid black;
     background: rgb(182, 179, 179);
     color: rgb(49, 48, 48);
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bolder;
     cursor: pointer;
+    padding: 18px 18px 0px 18px;
 }
-.input-value input::placeholder{
+#input-field::placeholder{
     color: rgb(66, 65, 65);
-    font-size: 18px;
+    font-size: 28px;
+    padding: 0;
 }
 .input-value button{
-    padding: 18px;
-    width: 50px;
-    border-radius: 6px;
+    padding: 10px;
+    width: 80px;
     border: 2px solid black;
     background: rgb(182, 179, 179);
-    /* cursor: pointer; */
     font-size: 15px;
+    border-radius: 12px;
+    height: 95px;
 }
 .input-value button:focus{
     border: 3px solid black;
     background-color: green;
+    cursor: pointer;
 }
 .input-value button:hover{
-    /* border: 3px solid black; */
+    border: 3px solid black;
     background-color: green;
     cursor: pointer;
 }
 .crud-container{
-    width: 100%;
+    width: 85%;
     height: auto;
-    margin: 10px 8px;
-    padding: 20px;
+    margin: 10px 10px 10px 30px;
+    padding: 10px;
 }
 h5{
     color: lime;
@@ -99,4 +100,125 @@ li {
   background: #edeef0;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+/* Adding Media Queries */
+
+/* Media Queries for screen of 620px */
+@media (min-width: 1068px) {
+    h1{
+        font-size: 45px;
+    }
+    #input-field{
+        font-size: 24px;
+    }
+    #input-field::placeholder{
+        font-size: 28px;
+    }
+    .input-value button{
+        padding: 27px 40px 27px 27px;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    body{
+        min-height: 100vh;
+        font-weight: bolder;
+    }
+    .container-wrapper{
+        gap: 10px;
+    }
+}
+
+@media (min-width: 920px){
+    #input-field{
+        height: 80%;
+        padding-top: 0;
+        font-size: 24px;
+    }
+    #input-field::placeholder{
+        font-size: 28px;
+    }
+    .container-wrapper{
+        height: 800px;
+    }
+}
+
+@media (min-width: 720px){
+    #input-field{
+        height: 80%;
+        padding-top: 0;
+        font-size: 24px;
+    }
+    #input-field::placeholder{
+        font-size: 28px;
+    }
+    .container-wrapper{
+        width: 100%;
+        margin: 80px 28px 12px 28px;
+        height: 800px;
+    }
+
+}
+
+@media (min-width: 480px){
+    #input-field{
+        height: 80%;
+        padding-top: 0;
+        font-size: 18px;
+    }
+    #input-field::placeholder{
+        font-size: 18px;
+    }
+    .container-wrapper{
+        width: 100%;
+        margin: 80px 28px 12px 28px;
+        height: 800px;
+    }
+    .crud-container{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    body{
+        margin: 0 60px 0 0;
+    }
+
+}
+
+@media (min-width: 320px){
+    #input-field{
+        /* font-size: 16px; */
+        font-weight: bolder;
+        height: 80px;
+        margin-left: 0;
+        padding: 0 0 16px 18px;
+    }
+    #input-field::placeholder{
+        /* font-size: 16px; */
+        font-weight: bolder;
+    }
+    .container-wrapper{
+        width: 100%;
+        margin: 18px 8px 0 0;
+        height: 800px;
+    }
+    body{
+        margin: 60px 25px 0 25px;
+        min-height: 100vh;
+    }
+    .input-value button{
+        height: 80px;
+        font-size: 30px;
+    }
+    .input-value{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .crud-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
